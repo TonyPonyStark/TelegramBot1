@@ -1,4 +1,4 @@
-import telebot, wikipedia, re
+import telebot, wikipedia
 
 # Создаем экземпляр бота
 bot = telebot.TeleBot('5709269157:AAHUEpZ_3T1yvlQFSD0wuHLpBv_Nm_zknKk')
@@ -25,7 +25,6 @@ def getwiki(s):
                     wikitext2 = wikitext2 + x + '.'
             else:
                 break
-        # Теперь при помощи регулярных выражений убираем разметку
         # Возвращаем текстовую строку
         return wikitext2
     # Обрабатываем исключение, которое мог вернуть модуль wikipedia при запросе
